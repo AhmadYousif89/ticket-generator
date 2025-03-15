@@ -174,7 +174,7 @@ export default function ImagePicker({
           error && !isDragging && !preview ? "border-red-400" : "",
         )}
         onClick={!preview ? openImagePicker : () => {}}
-        onKeyDown={handleKeyDown}
+        onKeyDown={!preview ? handleKeyDown : () => {}}
         onDragEnter={handleDragEnter}
         onDragOver={handleDragOver}
         onDragLeave={handleDragLeave}
