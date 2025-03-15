@@ -15,7 +15,7 @@ export default function FixedBackgrounds() {
       <img
         src={squigglyLine}
         alt="squiggly line pattern"
-        className="absolute -top-4 right-0 -z-10 size-32 lg:right-16 lg:size-52 xl:size-80"
+        className="absolute -top-4 right-0 -z-10 size-32 lg:size-52 xl:size-80"
       />
       <img
         src={circles}
@@ -25,7 +25,7 @@ export default function FixedBackgrounds() {
       <img
         src={circles}
         alt="circle pattern"
-        className="fixed top-1/2 -right-10 -z-10 size-32 lg:absolute lg:right-16 lg:size-44"
+        className="fixed top-1/2 -right-10 -z-10 size-32 lg:absolute lg:right-0 lg:size-44 xl:size-56"
       />
       <img
         src={squigglyLines}
