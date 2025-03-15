@@ -37,7 +37,7 @@ In this challenge, we are tasked with creating a simple ticket generator website
 
 ### Links
 
-- Solution URL: [Github Link](https://your-solution-url.com)
+- Solution URL: [Github Link](https://github.com/AhmadYousif89/ticket-generator)
 - Live Site URL: [ticket-gen](https://confticketgen.vercel.app)
 
 ### Technologies Used
