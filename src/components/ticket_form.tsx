@@ -111,11 +111,11 @@ export default function TicketForm() {
               <span>Your Journey to Coding Conf</span>
               <span>{new Date().getFullYear()} Start Here!</span>
             </h2>
-            <p className="pt-4 text-base leading-5 font-semibold text-[var(--neutral-500)]">
+            <p className="pt-4 text-base leading-5 font-semibold text-[var(--neutral-500)] sm:text-xl">
               Secure your spot at next year&apos;s biggest coding conference.
             </p>
           </header>
-          <form className="pt-6" onSubmit={handleSubmit}>
+          <form className="mx-auto max-w-md pt-6" onSubmit={handleSubmit}>
             <ImagePicker
               ref={imagePickerRef}
               onSelectImage={(image: File | null) => setImage(image)}
