@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@theme {
+  /* Colors */
+  --neutral-0: hsl(0, 0%, 100%);
+  --neutral-300: hsl(252, 6%, 83%);
+  --neutral-500: hsl(245, 15%, 58%);
+  --neutral-700: hsl(245, 19%, 35%);
+  --neutral-900: hsl(248, 70%, 10%);
+  --orange-500: hsl(7, 88%, 67%);
+  --orange-700: hsl(7, 71%, 60%);
+  --gradient-text: hsl(7, 86%, 67%) to hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 400 800;
+  src: url("./assets/fonts/Inconsolata-VariableFont_wdth,wght.ttf")
+    format("truetype");
+}
+
+body {
+  margin: 0;
+  height: 100svh;
+  background-image: url("./assets/images/background-mobile.png");
+  background-size: cover;
+  background-position: center;
+  font-family: "Inconsolata", monospace;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--neutral-0);
+
+  @media (min-width: 376px) {
+    background-image: url("./assets/images/background-tablet.png");
+  }
+
+  @media (min-width: 1025px) {
+    background-image: url("./assets/images/background-desktop.png");
+  }
+}
+
+input:not(:placeholder-shown):user-valid:focus-visible {
+  border-color: hsl(85, 100%, 50%);
+}
+input:user-invalid {
+  border-color: oklch(0.704 0.191 22.216);
+}
+
+#root {
+  height: inherit;
+}
