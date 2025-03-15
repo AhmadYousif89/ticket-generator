@@ -9,6 +9,7 @@ export default function FixedBackgrounds() {
     <>
       <img
         src={bgLines}
+        alt="line pattern"
         className="absolute top-0 -z-10 mx-auto size-full max-w-[1440px] object-cover object-left"
       />
 
